@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo link" href="./index.html">
+        <img src="images/logo.png" alt="logo" />
+      </a>
+      <div>
+        <div class="title">
+          <div class="project">
+            <h2 class="text">monblanproject</h2>
+            <button class="start-button" type="button">
+              Start on 17-02-2016
+            </button>
+          </div>
+
+          <ul class="list">
+            <li class="list-item"><p>870 posts</p></li>
+            <li class="list-item"><p>11,787 followers</p></li>
+            <li class="list-item"><p>112 following</p></li>
+          </ul>
+        </div>
+
+        <div class="datepicker-container">
+          <div class="datepicker">
+            <p class="text-date">Date</p>
+            <input
+              class="input"
+              type="text"
+              id="datepicker1"
+              placeholder="from"
+            />
+            <svg class="about-svg icon">
+              <use href="./icons/plus.svg#icon1"></use>
+            </svg>
+            <svg class="about-svg icon" id="icon1">
+              <use href="./icons/calendar.svg#icon2"></use>
+            </svg>
+          </div>
+          <div class="datepicker">
+            <input
+              class="input"
+              type="text"
+              id="datepicker2"
+              placeholder="09_08_2016"
+            />
+            <svg class="about-svg icon">
+              <use href="./icons/plus.svg#icon1"></use>
+            </svg>
+            <svg class="about-svg icon" id="icon2">
+              <use href="./icons/calendar.svg#icon2"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="icon-list">
+        <svg class="icon-grid">
+          <use href="./icons/grid.svg#icon-grid"></use>
+        </svg>
+        <svg class="icon-row">
+          <use href="./icons/group13.svg#icon-group13"></use>
+        </svg>
+      </div>
+      <div id="card-list"></div>
+      <button type="button" class="load-more">LOAD MORE</button>
+    </main>
+    <footer class=""></footer>
+    <script src="pikaday.js"></script>
+    <script>
+      var picker1 = new Pikaday({
+        field: document.getElementById("datepicker1"),
+      });
+      var picker2 = new Pikaday({
+        field: document.getElementById("datepicker2"),
+      });
+    </script>
+    <script src="script.js"></script>
+    <script src="datepicker-init.js"></script>
+  </body>
+</html>

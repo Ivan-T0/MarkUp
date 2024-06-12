@@ -1,0 +1,220 @@
+:root {
+  --raleway: "Raleway", sans-serif;
+  --c-blue: #3d8eda;
+  --c-black: #2e2f42;
+  --c-gray: #c8c8c8;
+  --c-white: #ffffff;
+  --bgr-white: #ffffff;
+  --bgr-gray: #e5e5e5;
+  --bgr-light-blue: #f4f4fd;
+  --bgr-blue2: #404bbf;
+  --bgr-blue: #4d5ae5;
+  --c-border: #6495ed;
+  --c-prtf-border: #e7e9fc;
+  --bgr-black: #2e2f42;
+  --border-c-icon: #8e8f99;
+  --c-green-icon: #31d0aa;
+  --c-checkbox-text: #757575;
+
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  color: var(--c-black);
+  margin: 0;
+  background-image: url(../images/bac.png);
+  background-repeat: no-repeat;
+  background-position: -80px -70px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 9999;
+}
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 70px;
+  padding-right: 70px;
+  border: 2px solid black;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 0 300px 31px 300px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.logo {
+  margin-right: 50px;
+}
+.main {
+  background-image: url(../images/back2.png);
+  background-position: 1300px 1150px;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0 300px;
+  min-height: 100vh;
+}
+
+.list {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.project {
+  display: flex;
+}
+.title {
+  margin-top: 30px;
+}
+.start-button {
+  display: block;
+  padding: 1px 2px;
+  display: block;
+  cursor: pointer;
+  color: var(--c-blue);
+  background-color: var(--c-white);
+  border: 1px solid var(--c-blue);
+  border-radius: 2px;
+  padding: 2px 4px;
+}
+
+.start-button:hover {
+  border: 1px solid var(--c-green-icon);
+  color: var(--c-green-icon);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-list {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.datepicker-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 19px;
+}
+.datepicker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-svg {
+  position: relative;
+  top: 0px;
+  right: 48px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-left: 1px solid black;
+}
+.block {
+  display: flex;
+  gap: 15px;
+}
+.input {
+  outline: none;
+  padding: 3px 4px;
+  max-width: 150px;
+  border: 1px solid var(--c-black);
+}
+
+#card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  flex-basis: calc((100% - 45px) / 4);
+}
+.load-more {
+  display: block;
+  cursor: pointer;
+  background-color: white;
+  color: #929292;
+  border-radius: 14px;
+  border: 1px solid #929292;
+  padding: 8px 26px;
+  margin: 16px auto 60px auto;
+  font-size: 11px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+}
+.load-more:hover {
+  border: 1px solid var(--c-green-icon);
+  color: var(--c-green-icon);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-grid {
+  display: block;
+  width: 22px;
+  height: 24px;
+  fill: var(--c-gray);
+}
+.icon-row {
+  display: block;
+  width: 22px;
+  height: 24px;
+  fill: var(--c-gray);
+}
+.icon-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-bottom: 23px;
+}
+.icon-chat-bubble-dots {
+  display: block;
+  width: 22px;
+  height: 22px;
+  fill: var(--c-gray);
+}
+.card {
+  padding: 5px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.text {
+  margin-right: 16px;
+}
+#card-list.list-row .card {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  flex-basis: 100%;
+}
+#card-list.list-row .card-image {
+  width: 86px;
+  height: 86px;
+}
+.icon-grid.selected {
+  fill: blue;
+}
+
+.icon-row.selected {
+  fill: blue;
+}
+.card-details {
+  margin-top: 5px;
+}
