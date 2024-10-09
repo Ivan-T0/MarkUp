@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
 
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <link
@@ -91,5 +92,24 @@
     </script>
     <script src="script.js"></script>
     <script src="datepicker-init.js"></script>
+    <script>
+  window.ctrlSettings = {
+    webWidget: {
+      actorId: "39c0ae49-ea41-4834-8c60-90ef91627bb5"
+    }
+  };
+</script>
+<script>
+  (function () {
+    window.ctrl = window.ctrl || function () {
+      (window.ctrl.q = window.ctrl.q || []).push(arguments);
+    };
+    var script = document.createElement("script");
+    var parent = document.getElementsByTagName("script")[0].parentNode;
+    script.async = 1;
+    script.src = "https://widget.simulator.company/shim.js";
+    parent.appendChild(script);
+  })();
+</script>
   </body>
 </html>
